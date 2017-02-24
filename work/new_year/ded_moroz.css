@@ -1,0 +1,711 @@
+body{
+    background-color: black;
+    box-sizing: border-box;
+}
+#cont{
+    width: 1200px;
+    height: 900px;
+ background-color: black;
+z-index: -2;
+}
+
+@keyframes box
+{
+    10%{
+     transform: rotate(2deg);
+}
+    40%{
+     transform: rotate(-2deg);
+}
+    }
+
+@keyframes snow
+{
+    to{
+        filter: opacity(30%);
+    }
+}
+@keyframes right
+{
+    to{
+     filter: opacity(0%);
+    }
+}
+
+@keyframes MarCr{
+
+from{
+  font-size: 40px;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top:80px;
+    left: 150px;
+   }
+to{
+    font-size: 90px;
+     width: 200px;
+    height: 100px;
+    position: absolute;
+    top:-80px;
+    left:400px;
+    }
+}
+
+@keyframes square
+{
+    to{background-color: blue;
+        border-radius: 100%;
+    }
+}
+@keyframes octagon
+{
+    to{background-color:palevioletred;
+        border-radius: 100%;
+    }
+}
+@keyframes snow
+{
+    to{
+        filter: opacity(30%);
+    }
+}
+@keyframes infinity
+{
+    to{
+     transform: rotate(360deg);
+}
+    }
+@keyframes heat
+{ 10%
+    {position: absolute;
+    top:120px;    
+    left:400px;}
+  30%
+    {position: absolute;
+        top:120px;
+    left:450px;}
+ 60%
+    {position: absolute;
+    top:120px;    
+    left:480px;}
+  90%
+    {position: absolute;
+    top:120px;
+    left:410px;}
+    
+}
+@keyframes triangle{
+
+    to{
+     	border-top: 100px solid aqua;
+         position: absolute;
+    top: 100px;
+    width: 0;
+	height: 0;
+	border-left: 60px solid transparent;
+	border-right: 60px solid transparent;
+    }
+}
+@keyframes star-six{
+    to{
+
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 120px solid yellow;
+	position: absolute;
+	content: "";
+	top: 30px;
+	left: -50px;   
+    z-index: -1;
+    }
+}
+
+#logo {
+    /*    padding: 5px;*/
+    display: inline-block;
+    margin-left: 45px;
+    margin-top: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 27px;
+    min-width: 150px;
+    /*    max-width: 150px;*/
+    color: #07afdf;
+    background-image: url('../../img/logo.png')
+}
+
+a #logo:hover {
+    background-image: url('../../img/logo_h.png')
+}
+
+
+hr{position: absolute;
+    top:150px;
+    left:8px;
+    width: 100%;
+    height: 3px;
+    background-color: aquamarine
+}
+#square {
+    position: absolute;
+    top: 120px;
+    left:60px;
+    width: 100px;
+	height: 100px;
+	background:yellow;
+    animation-name: square;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#triangle-down {
+     position: absolute;
+    top: 130px;
+    left:280px;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 100px solid coral;
+    background:transparent;
+    animation-name: triangle;
+    animation-duration: 2s;
+    animation-delay:5s; 
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#star-six {
+     position: absolute;
+    top: 100px;
+    left:650px;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solidc;
+	
+  
+}
+#star-six:after {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 100px solid goldenrod;
+	position: absolute;
+	content: "";
+	top: 30px;
+	left: -50px;
+    animation-name: star-six;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction:normal ;
+}
+#heart {
+
+    position:absolute;
+    top:120px;
+    left: 430px;
+    width: 100px;
+    height: 90px;
+    animation-name: heat;
+    animation-duration: 10s;
+      animation-delay:10s; 
+    animation-iteration-count: infinite;
+    animation-direction:normal ;
+    animation-timing-function: ease;
+}
+#heart:before,
+#heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background:red;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+}
+#heart:after {
+left: 71px;
+transform: rotate(45deg);
+}
+
+#infinity {
+    position: absolute;
+     top:120px;
+    left: 10px;
+    width: 212px;
+    height: 100px;
+    animation-name: infinity;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+ 
+#infinity:before,
+#infinity:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 8px;
+    width: 50px;
+    height: 50px;    
+    border: 20px solid blueviolet;
+   border-radius: 50px 50px 0 50px;
+            transform: rotate(-45deg);
+}
+ 
+#infinity:after {
+    left: auto;
+    right: 8px;
+         border-radius: 50px 50px 50px 0;
+            transform:rotate(45deg);
+}
+#octagon {
+    	position: absolute;
+    top:50px;
+        left:820px;
+	width: 100px;
+	height: 100px;
+	background: pink;
+	position: relative;
+      animation-name: octagon;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    }
+ 
+#octagon:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;    
+    border-bottom: 29px solid pink;
+	border-left: 29px solid green;
+	border-right: 29px solid green;
+	width: 42px;
+	height: 0;
+}
+ 
+#octagon:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;    
+	border-top: 29px solid pink;
+	border-left: 29px solid green;
+	border-right: 29px solid green;
+	width: 42px;
+	height: 0;
+}
+#star-five {
+   position:absolute;
+    margin: 10px 950px;
+   display: block;
+   color: red;
+   width: 0px;
+   height: 0px;
+   border-right:  100px solid transparent;
+   border-bottom: 70px  solid red;
+   border-left:   100px solid transparent;
+   transform:    rotate(35deg);
+    animation-name: infinity;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#star-five:before {
+   border-bottom: 80px solid red;
+   border-left: 30px solid transparent;
+   border-right: 30px solid transparent;
+   position: absolute;
+   height: 0;
+   width: 0;
+   top: -45px;
+   left: -65px;
+   display: block;
+   content: '';
+   transform: rotate(-35deg);
+}
+#star-five:after {
+   position: absolute;
+   display: block;
+   color: red;
+   top: 3px;
+   left: -105px;
+   width: 0px;
+   height: 0px;
+   border-right: 100px solid transparent;
+   border-bottom: 70px solid red;
+   border-left: 100px solid transparent;
+   transform: rotate(-70deg);
+    content: '';
+}
+
+.snow{
+    color:snow;
+    font-size: 40px;
+    position: absolute;
+    z-index: 1;
+    animation-name:snow ;
+     animation-duration: 2s;
+     animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+#ded_moroz:hover{
+    
+    position: absolute;
+    top: 445px;
+    left:110px;
+    width: 250px;
+	height: 250px;
+    background-color: black;
+   background-image: url('d_m.png');
+    background-size: cover;
+    z-index: 1;
+     animation-name:ded_moroz ;
+     animation-duration: 5s; 
+  }
+#ded_moroz:hover #MarCr{
+    display:block;
+    position: absolute;
+    left:10px;
+    animation-name: MarCr;
+    animation-duration: 2s;
+    color: red;
+    z-index: -5;
+ }
+#ded_moroz{
+  position: absolute;
+    top: 560px;
+    left:120px;
+    width: 250px;
+	height: 250px;
+    background-color: black;
+   background-image: url('d_m.png');
+    background-size: cover;
+    z-index: 0;
+}
+#right{float:left;
+    position: absolute;
+    top: 157px;
+    left:161px;
+    width:18px;
+    height: 6px;
+    background-color:aliceblue;
+    border-radius: 100%;
+    animation-name: right;
+    animation-duration:  2s;
+    animation-iteration-count:infinite;
+}
+#r{float:left;
+    position: absolute;
+    left:4px;
+    width:8px;
+    height: 6px;
+    background-color:dimgray;
+    border-radius: 100%;
+  }
+
+#left{float:left;
+    position: absolute;
+    top: 157px;
+    left:107px;
+    width:18px;
+    height: 6px;
+    background-color: aliceblue;
+    border-radius: 100%;    
+}
+#l{float:left;
+    position: absolute;
+    left:5px;
+    width:8px;
+    height: 6px;
+    background-color: dimgray;
+    border-radius: 100%;
+  
+}
+
+#cap{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 250px;
+	height: 70px;
+    z-index: 5;
+}
+.box {
+    position: absolute;
+    top: 630px;
+    left:120px;
+    width: 250px;
+	height: 250px;
+	 background: red;
+    background: -moz-linear-gradient(top left, red 0.3%,orange 10%, #fe2f54 60%, coral 80%);
+    background: -webkit-linear-gradient(top left, red 0.3%,orange 10%, #fe2f54 60%, coral 80%);
+    background: linear-gradient(top left, red 0.3%,orange 10%, #fe2f54 60%, coral 80%);
+    padding: 10px;
+    animation-name: box;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: 1;
+}
+#cap_l{
+   position: absolute;
+    top: -87px;
+    left:108px;
+    width: 50px;
+	height: 120px;
+	 background: #1a9299;
+      transform: rotate(-45deg);
+    z-index: -1;
+}
+#cap_r{
+   position: absolute;
+     top: -90px;
+    left:117px;
+    width: 50px;
+	height: 120px;
+    background: #1a9299;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+#cap_h{
+   position: absolute;
+      top: -58px;
+    left:110px;
+    width: 50px;
+	height: 120px;
+	 background: #1a9299;
+    transform: rotate(90deg);
+    z-index: 0;
+}
+#cap_v{
+   position: absolute;
+    top: 0px;
+    left:110px;
+    width: 50px;
+	height: 90px;
+	 background: #1a9299;
+    z-index: 0;
+}
+.lin_h{
+     position: absolute;
+    top: 0px;
+    left:110px;
+    width: 50px;
+	height: 270px;
+	 background:  #1a9299;
+       z-index: 1;
+}
+
+.lin_v{
+     position: absolute;
+    top: 100px;
+    left:0px;
+    width: 270px;
+	height: 50px;
+	 background:  #1a9299;
+     z-index: 1;
+}
+}
+
+#MarCr{
+    display:none;
+    width: 300px;
+    height: 150px;
+    color: black;
+    font-size: 90px;
+    text-align: center;
+ }
+
+
+.snow#s1{
+top:60px;
+left:950px;    
+}
+.snow#s2{
+top:10px;
+left:560px;    
+}
+.snow#s3{
+top:300px;
+left:100px;    
+}
+.snow#s4{
+top:250px;
+left:350px;    
+}
+.snow#s5{
+top:350px;
+left:1050px;    
+}
+.snow#s6{
+top:400px;
+left:360px;    
+}
+.snow#s7{
+top:500px;
+left:560px;    
+}
+.snow#s8{
+top:600px;
+left:660px;    
+}
+.snow#s9{
+top:700px;
+left:60px;    
+}
+.snow#s10{
+top:800px;
+left:1070px;    
+}
+.snow#s11{
+top:200px;
+left:600px;    
+}
+.snow#s12{
+top:600px;
+left:960px;    
+}
+.snow#s13{
+top:800px;
+left:260px;    
+}
+.snow#s14{
+top:500px;
+left:200px;    
+}
+.snow#s15{
+    font-size: 90PX;
+top:275px;
+left:710px;   
+color: gold;
+}
+.snow#s16{
+top:800px;
+left:760px;    
+}
+.snow#s17{
+top:750px;
+left:500px;    
+}
+.ball{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%; 
+    z-index: 3;
+   animation-name:snow ;
+     animation-duration: 1s;
+     animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+#b1{
+    position: absolute;
+    top: 680px;
+    left:880px;
+    background:red;
+    }
+#b2{
+    position: absolute;
+    top: 500px;
+    left:630px;
+    background:yellow;
+    animation-duration: 4s;
+}
+#b3{
+    position: absolute;
+    top: 410px;
+    left:730px;
+    background:blue;
+animation-duration: 3s;
+}
+#b4{
+    position: absolute;
+    top: 600px;
+    left:770px;
+    background:aqua;
+    animation-duration: 2s;
+}
+#b5{
+    position: absolute;
+    top: 680px;
+    left:580px;
+    background:blue;
+    animation-duration: 5s;
+}
+#b6{
+    position: absolute;
+    top: 780px;
+    left:800px;
+    background:yellow;
+    animation-duration: 2s;
+}
+#b7{
+    position: absolute;
+    top: 700px;
+    left:700px;
+    background:coral;
+    
+}
+#b8{
+    position: absolute;
+    top: 800px;
+    left:650px;
+    background:red;
+    animation-duration: 3s;
+}
+#b9{
+    position: absolute;
+    top: 500px;
+    left:830px;
+    background:red;
+}
+#b10{
+    position: absolute;
+    top: 550px;
+    left:700px;
+    background:violet;
+}
+
+#tree1 {
+    position: absolute;
+    top:350px;
+    left:650px;
+	width: 0;
+	height: 0;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-bottom: 150px solid green;
+}
+#tree2 {
+    position: absolute;
+    top:480px;
+    left:600px;
+	width: 0;
+	height: 0;
+	border-left: 150px solid transparent;
+	border-right: 150px solid transparent;
+	border-bottom: 200px solid green;
+ }
+
+#tree3 {
+    position: absolute;
+    top:600px;
+    left:550px;
+	width: 0;
+	height: 0;
+	border-left: 200px solid transparent;
+	border-right: 200px solid transparent;
+	border-bottom: 300px solid green;
+}

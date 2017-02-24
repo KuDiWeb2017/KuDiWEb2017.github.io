@@ -1,0 +1,213 @@
+#bucket:hover {
+         filter: opacity(0);
+   }
+
+@keyframes eYe{
+
+    to{background-color: blue;
+        border-radius: 0%;
+    }
+
+}
+@keyframes MarCr{
+
+from{
+  font-size: 40px;
+      width: 150px;
+    height: 150px;
+}
+to{
+
+     font-size: 90px;
+      width: 300px;
+    height: 150px;
+}
+}
+#foot:hover{
+     position: absolute;
+    width: 100px;
+    height: 100px;
+    top:550px;
+    left: 160px;
+}
+@keyframes nos{
+    20%{
+    position: absolute;
+    right: 95px;  
+    top: 10px;
+    margin-top: 25px;
+    border: 10px solid transparent;	
+    border-right: 35px solid orange;
+    }
+     40%{
+         position: absolute;
+      right: 95px; 
+    top: 10px;
+    margin-top: 25px;
+    border: 10px solid transparent;	
+    border-right: 55px solid orange;
+    }
+    60%{
+         position: absolute;
+      right: 95px; 
+    top: 10px;
+    margin-top: 25px;
+    border: 10px solid transparent;	
+    border-right: 65px solid orange;
+    }
+    80%{
+         position: absolute;
+      right: 95px; 
+    top: 10px;
+    margin-top: 25px;
+    border: 10px solid transparent;	
+    border-right: 75px solid orange;
+    }
+    100%{ 
+        position: absolute;
+      right: 95px; 
+    top: 10px;
+    margin-top: 25px;
+    border: 10px solid transparent;	
+    border-right: 85px solid orange;
+    }
+    
+}
+
+body{
+    background-color: darkturquoise;
+}
+#snowman{
+    width: 800px;
+    height: 800px;
+   
+}
+#snowman>#bucket{
+    position: absolute;
+    width: 50px;
+    height: 0px;
+    top:60px;
+    left: 200px;
+   border-bottom: 100px solid grey;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    z-index: 1;
+}
+#snowman>header{
+   position: absolute;
+    width: 100px;
+    height: 100px;
+    top:140px;
+    left: 200px;
+    background-color: aliceblue;
+    border: 2px solid grey;
+    border-radius: 100%
+}
+header>div#eye{float:left;
+    width:20px;
+    height: 20px;
+    background-color: aqua;
+    border-radius: 100%;
+    margin: 25px 15px;
+    animation-name: eYe;
+    animation-duration: 2s;
+    animation-delay:2s; 
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+#snowman>main{
+     position: absolute;
+    width: 200px;
+    height: 150px;
+    top:240px;
+    left: 150px;
+    background-color: aliceblue;
+     border: 2px solid grey;
+    border-radius: 70%
+}
+#snowman>footer{
+     position: absolute;
+    width: 300px;
+    height: 250px;
+    top:390px;
+    left: 100px;
+     background-color: aliceblue;
+     border: 2px solid grey;
+    border-radius: 60%
+}
+#carrot{
+     position: absolute;
+    right: 95px; 
+    top: 10px;
+    margin-top: 25px;
+    border: 10px solid transparent;	
+    border-right: 35px solid orange;
+
+    animation-name: nos;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+#hand{
+    float:left;
+    width:50px;
+    height: 50px;
+    background-color: aliceblue;;
+    border: 2px solid grey;
+    border-radius: 100%;
+    margin: 35px 65px; 
+}
+
+#hand:hover #MarCr{
+    display:block;
+    animation-name: MarCr;
+    animation-duration: 2s;
+ }
+#MarCr{
+    display:none;
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    top:10px;
+    left: 460px;
+    color: red;
+    font-size: 90px;
+    text-align: center;
+}
+#foot{
+    position: absolute;
+    width: 80px;
+    height: 50px;
+    top:590px;
+    left: 160px;
+    background-color: aliceblue;
+    border-radius: 50px 50px 0px 0px;
+     border: 2px solid grey;
+     animation-duration: 5s;
+    
+  }
+#foot2{
+     position: absolute;
+    width: 80px;
+    height: 50px;
+    top:590px;
+    left: 150px;
+    background-color: aliceblue;
+    border-radius: 50px 50px 0px 0px;
+     border: 2px solid grey;
+     z-index: -1;
+}
+#happy{
+    position: absolute;
+    width: 50px;
+    height: 70px;
+    top:60px;
+    left: 230px;
+    color: red;
+    text-align: center;
+    
+}
+

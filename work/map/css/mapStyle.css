@@ -1,0 +1,45 @@
+@font-face {
+    font-family: Got;
+    /* Имя шрифта */
+    src: url('../fonts/9910.ttf');
+    /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: Got;
+    /* Имя шрифта */
+    src: url(../'fonts/10323.ttf');
+    /* Путь к файлу со шрифтом */
+}
+
+body {
+    background-color: #7fdf7e;
+    text-align: justify;
+    font-family: Got;
+    font-size: 2em;
+}
+
+img {
+    margin-top: 50px;
+    margin-left: 80px;
+}
+
+
+#logo {
+    /*    padding: 5px;*/
+    display: inline-block;
+    margin-left: 45px;
+    margin-top: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 27px;
+    min-width: 150px;
+    /*    max-width: 150px;*/
+    color: #07afdf;
+    background-image: url('../../../img/logo.png')
+}
+
+a #logo:hover {
+    background-image: url('../../../img/logo_h.png')
+}

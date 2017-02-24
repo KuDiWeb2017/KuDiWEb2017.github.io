@@ -1,0 +1,131 @@
+body {
+    /*    width: 550px;*/
+    /*    height: 300px;*/
+    background-color: azure;
+    color: cadetblue
+}
+
+#web_field {
+    display: block;
+}
+
+content {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+#rezume * span {
+    font-weight: 700;
+    color: brown;
+}
+#experience * span {
+    font-weight: 600;
+/*    color: brown;*/
+}
+content * img {
+    display: block;
+    float: left;
+    width: 15%;
+    margin-top: 2.5%;
+    filter: sepia(0.5);
+    border-radius: 100%;
+    border: 25px dotted sandybrown;
+}
+h4
+{width: 60%;
+color: brown;
+}
+#rezume {
+    display: block;
+    padding: 0 3%;
+    float: left;
+    width: 30%;
+}
+
+#experience {
+    margin-left: 3%;
+    padding: 0 0 0 7%;
+    display: block;
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+.Name_skills{
+    width: 60%;
+    margin-top: 25px;
+    
+}
+.skills{
+display: inline-block;
+width: 100%;
+height: 5px;
+}
+.exp {
+/*    display: block;*/
+/*    float: left;*/
+    height: 5px;
+    width: 100%;
+    background: skyblue;
+  }
+
+#web,#desin,#user,#dev {
+    margin: -16px;
+    margin-left: 0px;
+    height: 4px;  
+}
+
+#desin{
+    width: 20%;
+        background: brown;
+}
+#user{
+    width: 80%;
+        background: green;
+}
+#dev{
+    width: 70%;
+        background: blue;
+}
+#web{
+    width: 40%;
+        background: yellow;
+}
+
+content * ul {
+    list-style-type: none;
+}
+
+content * div {
+    display: block;
+    float: left;
+    /*    margin-top: 50px;*/
+    /*    margin-left: 50px;*/
+}
+
+content * li {
+    margin-top: 10px;
+    /*    width: 200px;*/
+    text-align: justify;
+}
+
+
+
+content * img:hover {
+    filter: none;
+}
+
+content * a {
+    color: green;
+}
+   #menu {
+      padding: 3%;
+  }
+  
+  #menu li :hover {
+      height: 100%;
+      background-color: azure;
+      /*    border-top: 1px solid #292b53;*/
+      color: #07afdf;
+      text-decoration: none;
+  }

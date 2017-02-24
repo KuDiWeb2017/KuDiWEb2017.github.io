@@ -1,0 +1,140 @@
+body {
+    background-color: white;
+}
+
+#phone {
+    position:absolute;
+    top: 12px;
+    width: 280px;
+    height: 500px;
+    background-color: azure;
+    border-radius: 10px;
+    border: 10px solid grey;
+    border-top: 60px solid grey;
+}
+
+
+
+.akkord,
+input[type="radio"],input[type="checkbox"] {
+    display: none;
+}
+
+#logo {
+    /*    padding: 5px;*/
+    position: relative;
+    z-index: 3;
+    display: inline-block;
+    margin-left: 45px;
+    margin-top: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 27px;
+    min-width: 150px;
+    /*    max-width: 150px;*/
+    color: #07afdf;
+    background-image: url('../../img/logo.png')
+}
+
+a #logo:hover {
+    background-image: url('../../img/logo_h.png')
+}
+
+
+label[for="menu1"] {
+    position:absolute;
+    top: 12px;
+    left:20px;
+    display: block;
+    width: 34px;
+    font-size: 40px;
+    z-index: 2;
+}
+
+input[name="menu"]:checked+label {
+    
+    color: white;
+    text-align: center;
+/*    text-shadow: 1px 1px 1px deeppink ;*/
+}
+
+
+nav {
+    width: 0px;
+    height: 500px;
+    background-color: darkmagenta;
+    font-size: 20px;
+    position: absolute;
+   
+    left: 0px;
+/*    transition: left 1s ease-out 0.1s;*/
+    box-shadow: 1px 1px 3px cadetblue;
+    opacity: 0;
+}
+
+#menu {
+    margin-top: 100px;
+}
+
+
+/*
+.akkordeon{
+    margin-top: 50px;;
+}
+*/
+
+
+input[type="checkbox"]:checked+label+nav {
+    left: 0px;
+    width: 230px;
+    opacity: 1;
+}
+
+label.news {
+    background-color: darkmagenta;
+    display: block;
+    height: 50px;
+    color: azure;
+    text-align: center;
+    line-height: 50px;
+}
+
+label.man {
+    background: white;
+/*        -webkit-linear-gradient(45deg, white 0%, gainsboro 50%, white 100%, gainsboro 40%);*/
+    font-size: 75%;
+    display: block;
+    height: 25px;
+    color: black;
+    text-align: center;
+    line-height: 25px;
+    opacity: 0.8;
+}
+
+input[type="checkbox"]:checked+label.news {
+    text-shadow: 1px 1px 1px black;
+}
+
+input[name="akkordeon"]:checked+label.news:after {
+    content: '▲';
+    margin-left: 10px;
+    opacity: 0.7;
+}
+
+input:checked+label.man {
+/*    text-shadow: 1px 1px 1px grey;*/
+    font-weight: 600;
+/*    font-size: 70%;*/
+    color: azure;
+    background: -webkit-linear-gradient(90deg, white 0%, darkmagenta 50%, white 100%, darkmagenta 40%);
+    opacity: 1
+}
+
+input[type="checkbox"]:checked+label.news+div.akkord {
+    background-color: darkmagenta;
+    width: 230px;
+    height: 100px;
+    display: block;
+    text-align: center;
+}

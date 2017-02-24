@@ -1,0 +1,68 @@
+/*Слон*/
+
+.elephant{
+    width: 30px;
+    height: 44px;
+    border: 3px solid grey;
+    content: " ";
+    display: block;
+    border-top-right-radius: 80%;
+    border-top-left-radius: 80%;
+    margin-left: 19px;
+    margin-top: 12px;
+    background-color: black;
+}
+
+.elephant::before{
+    width: 10px;
+    height: 8px;
+    border: 3px solid grey;
+    content: " ";
+    display: block;
+    border-radius: 100%;
+    margin-top: -16px;
+    margin-left: 6px;
+    background-color: black;
+}
+
+
+.elephant::after{
+    float: left;
+    width: 45px;
+    height: 6px;
+    content:"";
+    margin-top: 28px;
+    margin-left: -10px;
+    display: block;
+    border: 3px solid grey;
+    background-color: black;
+    border-radius: 5px;
+}
+.elephant#white::before{
+    background-color: white;
+}
+.elephant#white{
+    background-color: white;
+}
+.elephant#white::after{
+    background-color: white;
+}
+
+.elephant:hover::after  {background-color: red;}
+.elephant:hover::before  {background-color: red;}
+.elephant:hover{background-color: red;}
+.elephant#white:hover {background-color:aqua;}
+.elephant#white:hover::after  {background-color: aqua;}
+.elephant#white:hover::before  {background-color: aqua;}
+
+.elephant:hover .help{
+position:absolute;
+top:200px;
+left:700px;
+    text-align: center;
+width: 200px;
+height:200px;
+display:block;
+background-color: gray;
+border: 3px solid dimgray;
+color: aliceblue}

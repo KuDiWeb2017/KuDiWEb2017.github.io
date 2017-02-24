@@ -1,0 +1,150 @@
+body {
+    /*    width: 550px;*/
+    /*    height: 300px;*/
+    background-color: azure;
+    color: cadetblue;
+}
+
+.web_field {
+    display: block;
+    padding: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+content {
+    display: inline-flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    
+}
+footer{
+    height: 100%;
+}
+#rezume * span {
+    font-weight: 700;
+    color: brown;
+}
+#experience * span {
+    font-weight: 600;
+/*    color: brown;*/
+}
+content * img {
+    display: block;
+/*    float: left;*/
+    width: 150%;
+    margin-top: 55%;
+    filter: sepia(0.5);
+    border-radius: 10%;
+    background-size: contain;
+    border: 5px solid sandybrown;
+    margin-left: auto;
+    margin-right: auto;
+}
+h4
+{width: 100%;
+color: brown;
+}
+#rezume {
+    display: block;
+    padding: 0 3%;
+/*    float: left;*/
+    width: 30%;
+    margin-left: 15%;
+    margin-right: auto;
+
+}
+
+#experience {
+/*    margin-left: 3%;*/
+   margin-left: 0%;
+    margin-right: auto;
+
+    padding: 0 0 0 7%;
+    display: block;
+/*    float: left;*/
+    width: 25%;
+    height: 100%;
+    
+}
+.Name_skills{
+    width: 100%;
+    margin-top: 10px;
+    
+}
+.skills{
+display: inline-block;
+width: 100%;
+height: 6px;
+}
+.exp {
+/*    display: block;*/
+/*    float: left;*/
+    height: 6px;
+    width: 100%;
+    background: skyblue;
+  }
+
+#web,#desin,#user,#dev {
+    margin: -16.5px;
+    margin-left: 0px;
+    height: 4px;  
+}
+
+#desin{
+    width: 20%;
+        background: brown;
+}
+#user{
+    width: 80%;
+        background: green;
+}
+#dev{
+    width: 70%;
+        background: blue;
+}
+#web{
+    width: 40%;
+        background: yellow;
+}
+
+content * ul {
+    list-style-type: none;
+    margin-left: -5%;
+}
+
+content * div {
+    display: block;
+/*    float: left;*/
+    /*    margin-top: 50px;*/
+    /*    margin-left: 50px;*/
+}
+
+content * li {
+    margin-top: 10px;
+    /*    width: 200px;*/
+    text-align: justify;
+}
+
+
+
+content * img:hover {
+    filter: none;
+}
+
+content * a {
+    color: green;
+}
+   #menu {
+      padding: 3%;
+  }
+  
+  #menu li :hover {
+      height: 100%;
+      background-color: azure;
+      /*    border-top: 1px solid #292b53;*/
+      color: #07afdf;
+      text-decoration: none;
+  }

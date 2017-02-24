@@ -1,0 +1,64 @@
+  @keyframes flash{
+        from {
+            transform: rotateY(0deg)
+        }
+        to {
+            transform: rotateY(360deg)
+                  }
+    }
+    
+    body {
+        background-color: azure;
+    }
+    
+    content {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 800px;
+        height: 150px;
+        background-color: snow;
+        margin: 150px 150px;
+        border: 1px solid green;
+        padding: 20px;
+        color: darkblue;
+    }
+    
+    div {
+        display: inline-block;
+    }
+    
+    #check {
+        width: 80px;
+    }
+    
+    #ch {
+        color: cadetblue;
+    }
+    
+    .arrow {
+        width: 60px;
+        height: 50px;
+        margin-left: 10px;
+        color: cadetblue;
+        font-size: 45px;
+    }
+    
+    .calendar {
+        width: 75px;
+        font-size: 45px;
+        text-align: center;
+        margin-left: 10px;
+          }
+.many{
+     animation-name: flash;
+        animation-delay: 1s;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+}
+    
+    p {
+        margin-top: 10px;
+        text-align: center;
+        width: 80px;
+        color: grey;
+    }

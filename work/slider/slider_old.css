@@ -1,0 +1,124 @@
+ body {
+     background-color: azure;
+ }
+ 
+ content div {
+     background-size: 640px 360px;
+     width: 950px;
+     height: 450px;
+     display: none;
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-position: center;
+ }
+ 
+ content {
+     display: flex;
+     display: block;
+     width: 100%;
+     height: 100%;
+     background-position: center;
+     color: darkblue;
+ }
+
+ content div {
+     width: 100%;
+     height: 100%;
+ }
+ 
+ #img1 {
+     background-image: url(img/slide1.jpg);
+ }
+ 
+ #img2 {
+     background-image: url(img/slide5.jpg)
+ }
+ 
+ #img3 {
+     background-image: url(img/slide2.jpg)
+ }
+ 
+ #img4 {
+     background-image: url(img/slide3.jpg)
+ }
+ 
+ #img5 {
+     background-image: url(img/slide4.jpg)
+ }
+ 
+ #img6 {
+     background-image: url(../map/img/middle.jpg)
+ }
+ 
+ content input {
+     position: absolute;
+     z-index: 3;
+     margin-left: 10px;
+     display: none;
+ }
+ 
+ content label {
+     position: absolute;
+     z-index: 99;
+     margin-left: 10px;
+     display: block;
+     float: left;
+     top: 50px;
+     left: 20px;
+     width: 15px;
+     height: 15px;
+     border-radius: 100%;
+     background-color: #c9cae1;
+ }
+ 
+ #label1 {
+     margin-top: 70px;
+ }
+ 
+ #label2 {
+     margin-top: 100px;
+ }
+ 
+ #label3 {
+     margin-top: 130px;
+ }
+ 
+ #label4 {
+     margin-top: 160px;
+ }
+ 
+ #label5 {
+     margin-top: 190px;
+ }
+ 
+ #label6 {
+     margin-top: 220px;
+ }
+ 
+ content input:checked+label {
+     background-color: #c9cae1;
+     display: block;
+     width: 10px;
+     height: 10px;
+     border: 8px solid #3a3d7e;
+ }
+ 
+ content input[name="slide"]:checked+label+div {
+     display: block;
+ }
+ 
+ content input[name="slide"]:checked+label+a>div {
+     display: block;
+ }
+
+   #menu {
+      padding: 3%;
+  }
+  
+  #menu li :hover {
+      height: 100%;
+      background-color: azure;
+      /*    border-top: 1px solid #292b53;*/
+      color: #07afdf;
+      text-decoration: none;
+  }

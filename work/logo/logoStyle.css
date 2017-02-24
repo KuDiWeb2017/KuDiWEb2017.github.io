@@ -1,0 +1,18 @@
+body {
+  padding: 50px;
+}
+.letter{
+    font-size:20px;
+    font-weight:900;
+    font-family:Verdana
+}
+.kdg {
+  width: 400px;
+  height: 400px;
+  
+}
+polygon{
+     fill:red;
+    stroke:orange;
+    stroke-width:5;
+}

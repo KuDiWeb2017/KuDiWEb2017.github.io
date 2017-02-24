@@ -1,0 +1,61 @@
+/*королева*/
+
+div#queen{
+    width: 50px;
+    height: 50px;
+    font-size: 80px;
+margin-left: 0px;
+margin-top: -56px;}
+div#queenw{
+    width: 50px;
+    height: 50px;
+    font-size: 80px;
+margin-left: 0px;
+margin-top: -56px;
+color:grey;
+}
+div#queenwb{
+    display: none;
+    width: 50px;
+    height: 50px;
+    font-size: 80px;
+margin-left: 0px;
+margin-top: -106px;
+color:red;
+}
+div#queenw_b{
+    width: 50px;
+    height: 50px;
+    font-size: 80px;
+margin-left: 0px;
+margin-top: -56px;
+color:grey;
+}
+div#queenww{
+   display: none;
+    width: 50px;
+    height: 50px;
+    font-size: 80px;
+margin-left: 0px;
+margin-top: -106px;
+color:aqua;
+}
+div#queenw:hover {color:aqua;}
+div#queenw_b:hover {color:red;}
+div#queenw_b:hover div#queenwb{display: block;}
+div#queenw_b:hover div#queenww{display: block;}
+
+div#queenw:hover,div#queenw_b:hover .help
+{
+position:absolute;
+top:200px;
+left:700px;
+width: 200px;
+font-size: 16px;
+text-align: center;
+height:200px;
+display:block;
+background-color: gray;
+border: 3px solid dimgray;
+color: aliceblue}
+

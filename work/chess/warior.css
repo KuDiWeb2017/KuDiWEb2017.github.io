@@ -1,0 +1,53 @@
+/*Пешка-воин*/
+.warior{
+    float: left;
+    width: 35px;
+    height: 6px;
+    margin-left: 17px;
+    margin-top: -15px;
+    border: 3px solid grey;
+    border-radius: 5px;
+    /*background-color: black;*/
+}
+
+.warior::before{
+    width: 13px;
+    height: 13px;
+    border: 3px solid grey;
+    content: " ";
+    display: block;
+    border-radius: 100%;
+    margin-top: -19px;
+    margin-left: 8px;
+    /*background-color: black;*/
+}
+
+.warior::after{
+    content: " ";
+    display: block;
+    height: 25px;
+    width: 30px;
+    border: 3px solid grey;
+    margin-top: 6px;
+    margin-left: 0px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    /*background-color: black;*/
+}
+.warior:hover::after  {background-color: red;}
+.warior:hover::before  {background-color: red;}
+.warior:hover{background-color: red;}
+
+.whiteFiga:hover, .whiteFiga:hover::after, .whiteFiga:hover::before{background-color: aqua;}
+
+.warior:hover .help{
+position:absolute;
+top:200px;
+left:700px;
+width: 200px;
+text-align: center;
+height:200px;
+display:block;
+background-color: gray;
+border: 3px solid dimgray;
+color: aliceblue}

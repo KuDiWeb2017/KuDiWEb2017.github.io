@@ -1,0 +1,86 @@
+/*Ладья*/
+div#towerb{
+    width: 50px;
+    height: 50px;
+    font-size: 80px;
+margin-left: 0px;
+margin-top: -56px;
+color:black;
+}
+div#towerb:hover {color:red;}
+div#tower{
+    width: 50px;
+    height: 50px;
+    font-size: 80px;
+margin-left: 0px;
+margin-top: -56px;
+color:white;
+}
+div#tower:hover {color:aqua;}
+div#towerw{
+     width: 50px;
+    height: 50px;
+    font-size: 80px;
+margin-left: 0px;
+margin-top: -56px;
+color:grey;
+}
+div#towerww{
+   display: none;
+    width: 50px;
+    height: 50px;
+    font-size: 80px;
+margin-left: 0px;
+margin-top: -106px;
+color:red;
+}
+div#towerw_w{
+   display: none;
+    width: 50px;
+    height: 50px;
+    font-size: 80px;
+margin-left: 0px;
+margin-top: -106px;
+color:aqua;
+}
+div#towerwb{
+    display: none;
+    width: 50px;
+    height: 50px;
+    font-size: 80px;
+margin-left: 0px;
+margin-top: -106px;
+color:red;
+}
+div#towerw:hover div#towerwb{display: block;}
+
+
+div#towerw:hover div#towerw_w{display: block;}
+
+div#towerw:hover .help
+{
+position:absolute;
+top:200px;
+left:700px;
+width: 200px;
+font-size: 16px;
+text-align: center;
+height:200px;
+display:block;
+background-color: gray;
+border: 3px solid dimgray;
+color: aliceblue}
+
+div#towerb:hover .help
+{
+position:absolute;
+top:200px;
+left:700px;
+width: 200px;
+font-size: 16px;
+text-align: center;
+height:200px;
+display:block;
+background-color: gray;
+border: 3px solid dimgray;
+color: aliceblue}

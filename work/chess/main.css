@@ -1,0 +1,40 @@
+/*шахматная доска*/
+td{
+    border: 1px solid grey;
+    background-color: snow;
+    width: 75px;
+    height: 75px;
+}
+
+.black{
+    background-color: black;
+}
+
+/*Фигура белый цвет*/
+.whiteFiga, .whiteFiga::after, .whiteFiga::before{
+    background-color:white;  
+}
+.blackFiga, .blackFiga::after, .blackFiga::before{
+  background-color: black;
+}
+.help{
+display:none;
+}
+#logo {
+    /*    padding: 5px;*/
+    display: inline-block;
+    margin-left: 45px;
+    margin-top: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 27px;
+    min-width: 150px;
+    /*    max-width: 150px;*/
+    color: #07afdf;
+    background-image: url('../../img/logo.png')
+}
+
+a #logo:hover {
+    background-image: url('../../img/logo_h.png')
+}

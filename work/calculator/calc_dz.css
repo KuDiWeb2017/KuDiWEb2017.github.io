@@ -1,0 +1,108 @@
+body
+{
+    background-color: azure
+}
+
+#logo {
+    /*    padding: 5px;*/
+    display: inline-block;
+    margin-left: 45px;
+    margin-top: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 27px;
+    min-width: 150px;
+    /*    max-width: 150px;*/
+    color: #07afdf;
+    background-image: url('../../img/logo.png')
+}
+
+a #logo:hover {
+    background-image: url('../../img/logo_h.png')
+}
+
+#calc
+{
+    background-color: whitesmoke;
+    width: 312px;
+    height: 550px;
+    box-shadow: 0 1px 2px 2px grey;
+    border-radius: 10px;
+    background-color: gainsboro;
+    background: linear-gradient(to top, dimgray, whitesmoke);
+    border-style:groove;
+    margin-top:30px;
+    margin-left:30px;
+    border-width:thick;   
+}
+
+p{
+    color: darkkhaki;
+    font-family: fantasy;
+    width: 70px;
+    margin-left: 215px;
+}
+#tablo{
+    width: 270px;
+    height: 90px;
+    border: 2px solid grey;
+    background-color: skyblue;
+    margin-left: 20px;
+    margin-top: -5px;    
+}
+
+#numb{
+    width: 150px;
+    height: 50px;
+    font-size: 50px;
+    margin-top: 15px;
+    margin-left: 115px;
+    color:darkslategray;
+    opacity: 0.8;
+}
+
+hr{margin-top: 5px;
+width: 260px;
+color: azure;
+opacity: 0.5;}
+
+button{
+    width: 50px;
+    height: 50px;
+    background-color: #B1BFC3 ;
+    background: linear-gradient(to bottom, whitesmoke,#B1BFC3);
+    border-radius: 7px;
+    margin-top: 15px;
+    margin-left: 20px;
+    border-bottom-style:groove;
+    border-width:medium;    
+    font-size: 20px;
+    color:darkslategray;
+}
+
+#AC 
+{
+    background: linear-gradient(to bottom right,whitesmoke,#DD7069);
+}
+
+button:focus,#AC:focus
+{
+ background: linear-gradient(to bottom right ,white, aqua);   
+}
+
+.sign
+{
+    background: linear-gradient(to bottom right ,khaki, darkkhaki);
+}
+
+.gr{
+    height: 33px;
+    background-color:slategrey;
+    border-radius: 5px;
+    color:white;
+    font-size: 18px;
+    background: linear-gradient(to bottom,whitesmoke, #1F4561);  
+}
+
+

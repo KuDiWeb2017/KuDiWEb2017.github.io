@@ -1,0 +1,39 @@
+@font-face {
+    font-family: roh; 
+    src: url('../fonts/pep_gnom.otf'); 
+   }
+body{
+    background-image:url('../img/rohan.jpg');
+    background-size: cover;    
+    text-align: justify;
+    font-family: roh;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 1.5em;
+    color:coral;
+}      
+    img{
+    margin-top: 30px;
+    margin-left: 700px;   
+    border: 3px solid #d9ac4e;
+    border-style:dotted;
+    vertical-align: inherit;
+}
+h3,span{
+color:brown;
+}
+#button_img {
+    width: 173px;
+    height: 60px;
+    background:url('../img/button.png');
+    background-position: -102px -22px;
+}
+
+#button_img:hover {
+    background-position: -102px -162px;
+/*    -162  -22*/
+}
+
+#button_img:active {
+    background-position:-102px -92px;
+}

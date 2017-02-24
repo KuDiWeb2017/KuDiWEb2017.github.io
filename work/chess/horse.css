@@ -1,0 +1,72 @@
+/*Слон*/
+
+.horse{
+    width: 28px;
+    height: 42px;
+    float: left;
+    border: 3px solid grey;
+    content: " ";
+    display: block;
+    border-top-right-radius: 80%;
+    border-top-left-radius: 80%;
+    margin-left: 24px;
+    margin-top: 0px;
+    background-color: black;
+}
+
+.horse::before{
+    /*position: absolute;*/
+    float: left;
+    content: "";
+    margin-left: -10px;
+    margin-top:-10px;
+    width: 20px;
+    height: 40px;
+    background:black;
+    border: 3px solid grey;
+    border-radius: 90px 90px 0 0 ;
+    transform: rotate(-125deg);
+}
+
+
+.horse::after{
+    float: left;
+    width: 45px;
+    height: 6px;
+    content:"";
+    margin-top: 4px;
+    margin-left: -10px;
+    display: block;
+    border: 3px solid grey;
+    background-color: black;
+    border-radius: 5px;
+    
+}
+.horse#white{
+ background-color: white;
+}
+.horse#white::after{
+ background-color: white;
+}
+.horse#white::before{
+ background-color: white;
+}
+.horse:hover::after  {background-color: red;
+}
+.horse:hover::before  {background-color: red;}
+.horse:hover{background-color: red;}
+.horse#white:hover {background-color:aqua;}
+.horse#white:hover::after  {background-color: aqua;}
+.horse#white:hover::before  {background-color: aqua;}
+
+.horse:hover .help{
+position:absolute;
+top:200px;
+left:700px;
+width: 200px;
+text-align: center;
+height:200px;
+display:block;
+background-color: gray;
+border: 3px solid dimgray;
+color: aliceblue}

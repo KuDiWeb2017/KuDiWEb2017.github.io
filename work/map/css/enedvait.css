@@ -1,0 +1,44 @@
+@font-face {
+    font-family: people;
+    src: url('../fonts/en.otf');
+}
+
+body {
+    background-image: url('../img/enedvait.jpg');
+    background-size: cover;
+    text-align: justify;
+    font-family: people;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 2em;
+    color: yellow;
+}
+
+img {
+    margin-top: 30px;
+    margin-left: 0px;
+    border: 3px solid #d9ac4e;
+    border-style: dotted;
+    vertical-align: inherit;
+}
+
+h3,
+span {
+    color: darkblue;
+}
+
+#button_img {
+    width: 173px;
+    height: 60px;
+    background:url('../img/button.png');
+    background-position: -102px -242px;
+}
+
+#button_img:hover {
+    background-position: -102px -22px;
+/*    -162  -22*/
+}
+
+#button_img:active {
+    background-position:-102px -92px;
+}
